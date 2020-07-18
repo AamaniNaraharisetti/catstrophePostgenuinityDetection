@@ -1,0 +1,21 @@
+<div src="{{url_for('static',filename='back4.jpg')}}" style="background-image: url('/static/back4.jpg/');height: 20cm;">
+
+<header>
+  <div class="container"><br>
+  <h1 align="center"><label for="exampleFormControlTextarea6" style="color: white;" align="center">Catastrophic Post Genuinity Detection</label></h1>
+  
+</div>
+</header>
+<p style="color:blanchedalmond;font-size:20;text-align: center;"><b>Results for Post</b></p>
+<div class="results" align="center">
+
+
+  
+{% if prediction == 1%}
+<h2 style="color:red">Catastrophic</h2>
+{% elif prediction == 0%}
+<h2 style="color:blue;;">Not Catastrophic</h2>
+{% endif %}
+
+</div>
+</div>
